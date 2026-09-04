@@ -1,0 +1,156 @@
+.giveaway-card {
+    background: linear-gradient(135deg, var(--color-primary-container), var(--color-primary));
+    border-radius: var(--radius-3xl);
+    padding: var(--spacing-lg);
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--spacing-lg);
+    margin-bottom: var(--spacing-xl);
+}
+
+@media (min-width: 768px) {
+    .giveaway-card {
+        flex-direction: row;
+        padding: var(--spacing-xl);
+    }
+}
+
+.giveaway-content {
+    position: relative;
+    z-index: 10;
+    max-width: 32rem;
+}
+
+.giveaway-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--spacing-base);
+    background-color: var(--color-secondary);
+    color: var(--color-on-secondary);
+    padding: var(--spacing-xs) var(--spacing-sm);
+    border-radius: var(--radius-full);
+    font-family: var(--font-body);
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: var(--spacing-md);
+}
+
+.giveaway-badge .material-symbols-outlined {
+    font-size: 16px;
+}
+
+.giveaway-title {
+    font-family: var(--font-heading);
+    font-size: 32px;
+    line-height: 40px;
+    font-weight: 700;
+    color: var(--color-on-primary);
+    margin-bottom: var(--spacing-sm);
+}
+
+.giveaway-description {
+    font-family: var(--font-body);
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 400;
+    color: var(--color-primary-fixed-dim);
+    margin-bottom: var(--spacing-lg);
+}
+
+.countdown-grid {
+    display: flex;
+    gap: var(--spacing-sm);
+    margin-bottom: var(--spacing-lg);
+}
+
+.countdown-box {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-radius: var(--radius-xl);
+    padding: var(--spacing-sm);
+    text-align: center;
+    min-width: 70px;
+}
+
+.countdown-val {
+    display: block;
+    font-family: var(--font-heading);
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 600;
+    color: var(--color-on-primary);
+}
+
+.countdown-lbl {
+    display: block;
+    font-family: var(--font-body);
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 500;
+    color: var(--color-primary-fixed-dim);
+}
+
+.giveaway-image-wrapper {
+    position: relative;
+    z-index: 10;
+    width: 100%;
+    max-width: 24rem;
+    aspect-ratio: 1 / 1;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border-radius: var(--radius-full);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: var(--spacing-md);
+}
+
+.giveaway-image {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    transform: rotate(-12deg);
+    filter: drop-shadow(0 25px 25px rgba(0, 0, 0, 0.25));
+    transition: all 0.5s ease;
+}
+
+.giveaway-image:hover {
+    transform: scale(1.1) rotate(0deg);
+}
+
+.glow-circle-1 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 16rem;
+    height: 16rem;
+    background-color: var(--color-primary-fixed);
+    border-radius: var(--radius-full);
+    mix-blend-mode: overlay;
+    filter: blur(48px);
+    opacity: 0.5;
+    transform: translate(50%, -50%);
+}
+
+.glow-circle-2 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 12rem;
+    height: 12rem;
+    background-color: var(--color-secondary-fixed);
+    border-radius: var(--radius-full);
+    mix-blend-mode: overlay;
+    filter: blur(32px);
+    opacity: 0.4;
+    transform: translate(-25%, 25%);
+}
