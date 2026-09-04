@@ -3,6 +3,7 @@ import tealCoralFlipFlops from './assets/a_professional_studio_shot_of_stylish_t
 import floralFlipFlops from './assets/colorful_summer_flip_flops_with_floral_patterns_for_women_beach_vibe_high.png';
 import sportSlides from './assets/sporty_slides_for_men_modern_design_black_and_white_color_scheme_professional.png';
 import leatherSandals from './assets/a_professional_studio_shot_of_classic_beach_sandals_comfortable_leather.png';
+import Footer from "./components/Footer/Footer.tsx";
 
 export default function App() {
     return (
@@ -231,24 +232,7 @@ export default function App() {
             </main>
 
             {/* Footer */}
-            <footer className="footer">
-                <div className="section-container footer-grid">
-                    <div>
-                        <h4 className="footer-brand-title">SolelyBeach</h4>
-                        <p className="footer-brand-desc">Tu marketplace definitivo para el calzado de verano.</p>
-                    </div>
-                    <div className="footer-nav">
-                        <a className="footer-link" href="#">About Us</a>
-                        <a className="footer-link" href="#">Sustainability</a>
-                        <a className="footer-link" href="#">Shipping</a>
-                        <a className="footer-link" href="#">Returns</a>
-                        <a className="footer-link" href="#">Contact</a>
-                    </div>
-                    <div className="footer-copyright-col">
-                        <p className="footer-copyright">© 2024 SolelyBeach Boutique. Stay Salty.</p>
-                    </div>
-                </div>
-            </footer>
+            <Footer></Footer>
         </div>
     );
 }
