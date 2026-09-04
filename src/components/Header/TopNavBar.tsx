@@ -1,3 +1,4 @@
+import './TopNavBar.css'
 export default function TopNavBar(){
     return(
             <nav className="navbar glass-nav">
